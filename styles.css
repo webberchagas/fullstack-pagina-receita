@@ -1,5 +1,70 @@
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #573824;
+  --surface-color: #F0E8C2;
+
+  --tx-color-primary: #291B1A;
+  --tx-color-secondary: #573A37;
+  --tx-color-on-bg: #F0E8C2;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body * {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--tx-color-secondary);
+  line-height: 150%;
+}
+
+body {
+  background-image: url(assets/main-image3x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#page {
+  max-width: 80rem;
+  margin: 4.8rem auto 20rem;
+  padding: 2.4rem;
+
+  background-color: var(--surface-color);
+  border-radius: 2.4rem;
+}
+
+img {
+  border-radius: 1.6rem;
+}
+
+main {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 140%;
+  color: var(--tx-color-primary);
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 150%;
+  color: var(--tx-color-primary);
+}
+
+p + p {
+  margin-top: 1.2rem;
+}
+
+ul {
+  margin-left: 1.8rem;
 }
